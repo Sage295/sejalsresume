@@ -1,11 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+body{
+    background-color: #B4B7ED
 }
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+h1{
+    color: #D08EEA
+}
+p{
+    color: #EB8FAC
 }
