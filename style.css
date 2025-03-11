@@ -1,23 +1,38 @@
 body {
-    background-color: #EDDEDD;
+    background-color: #e6d6d6;
 }
 
-h1 {
-    font-family: "Emblema One"; 
-    text-align: right;
-
+.header h1 {
+    margin-left: 320px; 
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 40px;
-    color: #545677
+    color: #33266d;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
 }
-    .header {
-    margin-left: -15px;
-}
+   
 .header {
-    box-shadow: 0 0 10px #D4AFB9; 
+    box-shadow: 0 0 20px #7a80ae; 
+    
 }
-
-
+.header .fa-list-alt{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    color: black;
+}
+.header .fa-heart{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    color: #fc7d58;
+}
+.header .fa-cloud{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    color: lightgrey;
+}
 
 p {
-    color: #706ca1;
+    font-family: "VT323", monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: #3f4363
 }
