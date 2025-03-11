@@ -1,11 +1,18 @@
-body{
-    background-color: #B4B7ED
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
 }
-h1{
+
+body {
+    background-color: #B4B7ED;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    font-size: 50px;
-    color: #5d1878
+    font-size: 40px;
+    color: #5d1878;
 }
-p{
-    color: #706ca1
+
+p {
+    color: #706ca1;
 }
