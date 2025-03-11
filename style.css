@@ -1,17 +1,21 @@
-html {
-    scroll-behavior: smooth; /* Enables smooth scrolling */
-}
-
 body {
     background-color: #EDDEDD;
 }
 
 h1 {
-    font-family: "Emblema One", system-ui; /* Correctly applied the font */
+    font-family: "Emblema One"; 
     text-align: right;
+
     font-size: 40px;
     color: #F09E9C;
 }
+    .header {
+    margin-left: -20px;
+}
+.header {
+    box-shadow: 0 0 10px #D4AFB9; 
+}
+
 
 p {
     color: #706ca1;
