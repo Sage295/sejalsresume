@@ -1,89 +1,94 @@
-body {
-    background-color: #e6d6d6;
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=VT323&family=Jersey+15&display=swap" rel="stylesheet">
 
-.header h1 {
-    margin-left: auto; 
-    font-family: "Jersey 15", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
-}
-   /* Animated Taskbar */
-        .header {
-            position: fixed; 
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 60px;
-            background-image: url('giphy.gif');
-            background-size: 90% ;
-            background-position: center;
-            display: flex;
-            justify-content: flex-start; /* Aligns items to the left */
-            align-items: center;
-            padding: 10px 20px;
-            gap: 10px; /* Space between icons */
-            color: white;
-            font-size: 20px;
-            font-family: Arial, sans-serif;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            animation: slideDown 1s ease-in-out;
-            z-index: 1000;
-        }
-
-        /* Slide Down Animation */
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        /* Icon Styling */
-        .header i {
-            font-size: 24px;
-            cursor: pointer;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Ensures content doesn't go under the fixed header */
-        body {
-            margin: 0;
-            padding-top: 70px; /* Adjust to match header height */
-            font-family: Arial, sans-serif;
-        }
-   
-.header {
-    box-shadow: 0 0 20px #7a80ae; 
+    </head>
+<body>
+    <!-- Animated Taskbar -->
+    <div class="header">
+       
+        <i class="fa fa-list-alt"></i>
+        <i class="fa fa-cloud"></i>
+        <i class="fa fa-heart"></i>
+        <h1>Hello.Sejal()</h1>
+    </div>
     
-}
-.header .fa-list-alt{
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-    color: white;
-}
-.header .fa-heart{
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-    color: #fc7d58;
-}
-.header .fa-cloud{
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-    color: lightgrey;
-}
+    <p>
+        &nbsp;Hi! Welcome to my website! My name is
+        <br>&nbsp;Sejal Mogalgiddi and I am a current
+        <br>&nbsp;sophomore at the University of Central
+        <br>&nbsp;Florida I made this website to display
+        <br>&nbsp;all my projects (even those that are
+        <br>&nbsp;currently in progress). Please note
+        <br>&nbsp;that I have no professional experience 
+        <br>&nbsp;with HTML, CSS,and JS so this website
+        <br>&nbsp;might look a little rough as I keep 
+        <br>&nbsp;working on it. <br><br><br>
+        &nbsp;Thank you for visiting my website! 
+    
+    
+    </p>
+      <style>
+         /* Animated Taskbar */
+         .header {
+             position: fixed; 
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 60px;
+             background-image: url('giphy.gif'); /* Replace with your image */
+             background-size: 90%;
+             background-position: center;
+             display: flex;
+             justify-content: flex-start; /* Aligns items to the left */
+             align-items: center;
+             padding: 10px 20px;
+             gap: 10px; /* Space between icons */
+             color: white;
+             font-size: 20px;
+             font-family: Arial, sans-serif;
+             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+             animation: slideDown 1s ease-in-out;
+             z-index: 1000;
+         }
+ 
+         /* Slide Down Animation */
+         @keyframes slideDown {
+             from {
+                 transform: translateY(-100%);
+                 opacity: 0;
+             }
+             to {
+                 transform: translateY(0);
+                 opacity: 1;
+             }
+         }
+ 
+         /* Icon Styling */
+         .header i {
+             font-size: 24px;
+             cursor: pointer;
+             margin: 0;
+             padding: 0;
+         }
+ 
+         /* Ensures content doesn't go under the fixed header */
+         body {
+             margin: 0;
+             padding-top: 70px; /* Adjust to match header height */
+             font-family: Arial, sans-serif;
+         }
+     </style>
 
-p {
-    font-family: "VT323", monospace;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 20px;
-    color: #3f4363
-}
-
-
+  
+     
+    
+</body>
+</html>
