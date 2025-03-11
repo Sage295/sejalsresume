@@ -3,14 +3,14 @@ html {
 }
 
 body {
-    background-color: #B4B7ED;
+    background-color: #EDDEDD;
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+    font-family: "Emblema One", system-ui; /* Correctly applied the font */
+    text-align: right;
     font-size: 40px;
-    color: #5d1878;
+    color: #F09E9C;
 }
 
 p {
