@@ -5,12 +5,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 <body>
+    <div class="header">
+        <i class="fa fa-list" aria-hidden="true"></i>
+        <h1>Sejal Mogalgiddi</h1>
+    </div>
 
-    <h1>Sejal Mogalgiddi</h1>
     <p>Hello there! I have made this website to display<br>all my previous and present projects!</p>
-<img src="img_girl.png" alt="Girl in a jacket" style="float: right; width: 300px; height: auto;">
+    
+    <img src="img_girl.png" alt="Girl in a jacket" style="float: right; width: 300px; height: auto;">
 
     <!-- Smooth scroll link -->
     <a href="#section2">Go to Section 2</a>
@@ -19,8 +24,18 @@
     <div id="section2" style="height: 100vh; background: lightblue;">
         <h2>Welcome to Section 2!</h2>
     </div>
-   
 
-
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between; /* Pushes items to opposite sides */
+            align-items: center; /* Aligns icon and text vertically */
+            padding: 10px 20px; /* Adds spacing */
+        }
+        .header i {
+            font-size: 20px; /* Adjust icon size */
+        }
+    </style>
 </body>
+
 </html>
