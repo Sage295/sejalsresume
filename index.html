@@ -7,88 +7,114 @@
         <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-         <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=VT323&family=Jersey+15&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=VT323&family=Jersey+15&display=swap" rel="stylesheet">
+        
+        <style>
+            body {
+                background-color: #F7EFE5;
+                margin: 0;
+                padding-top: 70px;
+                font-family: Arial, sans-serif;
+            }
 
+            /* Animated Taskbar */
+            .header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 60px;
+                background-image: url('Untitled27.png'); /* Replace with your image */
+                background-size: contain;
+                background-position: center;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 15px;
+                padding: 10px 20px;
+                color: white;
+                font-size: 20px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+                z-index: 1000;
+                animation: slideDown 1s ease-in-out;
+            }
+
+            /* Slide Down Animation */
+            @keyframes slideDown {
+                from {
+                    transform: translateY(-100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+
+            /* Header Styling */
+            .header h1 {
+                margin-left: auto;
+                padding-right: 20px;
+                font-family: "Jersey 15", sans-serif;
+                font-weight: 400;
+                font-size: 40px;
+                color: white;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            }
+
+            .header i {
+                font-size: 24px;
+                cursor: pointer;
+                color: #C8A1E0;
+            }
+
+            /* Paragraph with border */
+            .content {
+                display: flex;
+                align-items: center;
+                gap: 20px; /* Space between text and image */
+                max-width: 800px;
+                margin: 20px auto;
+            }
+
+            .bordered-text {
+                font-family: "VT323", monospace;
+                font-weight: 600;
+                font-size: 20px;
+                color: #674188;
+                border: 10px solid #E2BFD9; /* Light pink border */
+                padding: 10px;
+               
+                display: inline-block;
+                max-width: 400px;
+            }
+
+            .side-image {
+                width: 150px; /* Adjust size */
+                height: auto;
+                border-radius: 10px;
+            }
+        </style>
     </head>
 <body>
+
     <!-- Animated Taskbar -->
     <div class="header">
-       
         <i class="fa fa-list-alt"></i>
-        <i class="fa fa-cloud"></i>
-        <i class="fa fa-heart"></i>
         <h1>Hello.Sejal()</h1>
     </div>
-    
-    <p>
-        &nbsp;Hi! Welcome to my website! My name is
-        <br>&nbsp;Sejal Mogalgiddi and I am a current
-        <br>&nbsp;sophomore at the University of Central
-        <br>&nbsp;Florida I made this website to display
-        <br>&nbsp;all my projects (even those that are
-        <br>&nbsp;currently in progress). Please note
-        <br>&nbsp;that I have no professional experience 
-        <br>&nbsp;with HTML, CSS,and JS so this website
-        <br>&nbsp;might look a little rough as I keep 
-        <br>&nbsp;working on it. <br><br><br>
-        &nbsp;Thank you for visiting my website! 
-    
-    
-    </p>
-      <style>
-         /* Animated Taskbar */
-         .header {
-             position: fixed; 
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 60px;
-             background-image: url('Untitled27.png'); /* Replace with your image */
-             background-size: contain;
-             background-position: center;
-             display: flex;
-             justify-content: flex-start; /* Aligns items to the left */
-             align-items: center;
-             padding: 10px 20px;
-             gap: 10px; /* Space between icons */
-             color: white;
-             font-size: 20px;
-             font-family: Arial, sans-serif;
-             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-             animation: slideDown 1s ease-in-out;
-             z-index: 1000;
-         }
- 
-         /* Slide Down Animation */
-         @keyframes slideDown {
-             from {
-                 transform: translateY(-100%);
-                 opacity: 0;
-             }
-             to {
-                 transform: translateY(0);
-                 opacity: 1;
-             }
-         }
- 
-         /* Icon Styling */
-         .header i {
-             font-size: 24px;
-             cursor: pointer;
-             margin: 0;
-             padding: 0;
-         }
- 
-         /* Ensures content doesn't go under the fixed header */
-         body {
-             margin: 0;
-             padding-top: 70px; /* Adjust to match header height */
-             font-family: Arial, sans-serif;
-         }
-     </style>
 
-  
-     
-    
+    <!-- Text with Image -->
+    <div class="content">
+        <p class="bordered-text">
+            Hi! Welcome to my website! My name is Sejal Mogalgiddi and I am a current sophomore at the University of Central Florida.
+            I made this website to display all my projects (even those that are currently in progress).
+            Please note that I have no professional experience with HTML, CSS, and JS so this website might look a little rough as I keep working on it.
+            <br><br>
+            Thank you for visiting my website!
+        </p>
+        <img src="me.jpg" alt="Description" class="side-image">
+    </div>
+
 </body>
 </html>
