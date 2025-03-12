@@ -49,16 +49,16 @@ to {
     font-weight: 600;
     font-size: 20px;
     color: #674188;
-    border: 10px solid #E2BFD9;
+    border: 5px solid #E2BFD9;
     padding: 10px;
-    display: block; /* Fix alignment issues */
-    max-width: 450px; /* Adjust width */
+    display: block; 
+    max-width: 450px; 
 }
 
 .side-image {
-    width: 200px; /* Adjust as needed */
+    width: 300px; /* Adjust as needed */
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     flex-shrink: 0; /* Prevents image from shrinking */
 }
 
@@ -79,7 +79,7 @@ to {
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
-  color: white;
+  color: #F7EFE5;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
 }
 @keyframes bounce {
@@ -109,12 +109,27 @@ to {
 }
 .header .fa-list-alt{
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-  color: #C8A1E0;
-    font-size: 30px;
-    
-    animation: bounce 5s infinite;
+  color: #F7EFE5;
+  font-size: 30px;
+  animation: bounce 5s infinite;
+  transition: transform 0.3s ease, color 0.3s ease;
+ 
 }
+.fa-list-alt:hover {
+    color: #C8A1E0; 
+    
+}
+.header .fa-envelope{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+  color: #F7EFE5;
+  font-size: 25px;
+  animation: bounce 5s infinite;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.fa-envelope:hover {
+    color: #C8A1E0; 
 
+}
 
 p {
   font-family: "VT323", monospace;
@@ -125,5 +140,6 @@ p {
     border: 10px solid #E2BFD9; /* Adds a thin black outline */
     padding: 10px; /* Adds some space inside the border */
     display: inline-block; /* Keeps the border tight around the text */
-    
+
 }
+
