@@ -80,7 +80,7 @@ to {
   font-style: normal;
   font-size: 40px;
   color: #F7EFE5;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
 }
 @keyframes bounce {
     0%, 100% {
@@ -108,11 +108,13 @@ to {
 
 }
 .header .fa-list-alt{
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
   color: #F7EFE5;
   font-size: 30px;
   animation: bounce 5s infinite;
   transition: transform 0.3s ease, color 0.3s ease;
+ 
+
  
 }
 .fa-list-alt:hover {
@@ -120,7 +122,7 @@ to {
     
 }
 .header .fa-envelope{
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8h); 
   color: #F7EFE5;
   font-size: 25px;
   animation: bounce 5s infinite;
@@ -144,10 +146,10 @@ p {
 }
 .header a {
   text-decoration: none; /* Removes underline */
-  color: inherit !important; /* Ensures it takes the color of the parent */
+  color: inherit ; /* Ensures it takes the color of the parent */
 }
 
 .header a:hover {
-  color: #C8A1E0 !important; /* Hover color */
+  color: #C8A1E0 ; /* Hover color */
 }
 
