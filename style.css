@@ -32,31 +32,42 @@ to {
     opacity: 1;
     }
 }
-.content {
+..content {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Distributes space */
     gap: 20px; /* Space between text and image */
-    max-width: 800px;
+    max-width: 900px; /* Increase width */
     margin: 20px auto;
+    flex-wrap: nowrap; /* Prevents wrapping */
 }
+
 .bordered-text {
+    flex: 1; /* Allows the text box to take up remaining space */
     font-family: "VT323", monospace;
     font-weight: 600;
     font-size: 20px;
     color: #674188;
-    border: 10px solid #E2BFD9; /* Light pink border */
+    border: 10px solid #E2BFD9;
     padding: 10px;
-   
-    display: inline-block;
-    max-width: 400px;
+    display: block; /* Fix alignment issues */
+    max-width: 450px; /* Adjust width */
 }
+
+.side-image {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
 
 .header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 15px; 
-  padding-right: 20px; 
+  gap: 15px; /* Ensures spacing between icons and text */
+  padding-right: 20px; /* Prevents cutoff */
 }
 
 
@@ -102,11 +113,6 @@ to {
     
     animation: bounce 5s infinite;
 }
- .side-image {
-            width: 150px; 
-            height: auto;
-                border-radius: 10px;
-            }
 
 
 p {
@@ -115,8 +121,8 @@ p {
     font-style: normal;
     font-size: 20px;
     color: #674188;
-    border: 10px solid #E2BFD9; 
-    padding: 10px; 
-    display: inline-block; 
+    border: 10px solid #E2BFD9; /* Adds a thin black outline */
+    padding: 10px; /* Adds some space inside the border */
+    display: inline-block; /* Keeps the border tight around the text */
     
 }
