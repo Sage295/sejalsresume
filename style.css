@@ -9,7 +9,8 @@ body {
     width: 100%;
     height: 60px;
     background-image: url('purplesky.png'); /* Replace with your image */
-    background-size: contain;
+    background-size: cover; /* Stretch to fill */
+    background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items: center;
