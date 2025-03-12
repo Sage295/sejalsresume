@@ -142,12 +142,12 @@ p {
     display: inline-block; /* Keeps the border tight around the text */
 
 }
-a {
-    text-decoration: none;  /* Removes underline */
-    color: inherit;  /* Makes the link inherit the color from the parent */
+.header a {
+  text-decoration: none; /* Removes underline */
+  color: inherit !important; /* Ensures it takes the color of the parent */
 }
 
-a:hover {
-    color: #C8A1E0; /* Ensures hover color matches other icons */
+.header a:hover {
+  color: #C8A1E0 !important; /* Hover color */
 }
 
