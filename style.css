@@ -1,5 +1,5 @@
 body {
-  background-color: #e6d6d6;
+  background-color: #F7EFE5;
 }
 
 .header {
@@ -34,21 +34,18 @@ body {
 }
 .header .fa-list-alt{
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-  color: white;
+  color: #C8A1E0;
 }
-.header .fa-heart{
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-  color: #fc7d58;
-}
-.header .fa-cloud{
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-  color: lightgrey;
-}
+
 
 p {
   font-family: "VT323", monospace;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 20px;
-  color: #3f4363
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: #674188;
+    border: 10px solid #E2BFD9; /* Adds a thin black outline */
+    padding: 10px; /* Adds some space inside the border */
+    display: inline-block; /* Keeps the border tight around the text */
+    
 }
