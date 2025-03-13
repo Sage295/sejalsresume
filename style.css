@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   background-color: #F7EFE5;
    padding-top: 80px
@@ -36,11 +40,11 @@ to {
 .content {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distributes space */
-    gap: 20px; /* Space between text and image */
+     justify-content: space-between; 
+    gap: 20px; 
     max-width: 900px; /* Increase width */
     margin: 20px auto;
-    flex-wrap: nowrap; /* Prevents wrapping */
+    flex-wrap: nowrap; 
 }
 
 .bordered-text {
@@ -59,7 +63,8 @@ to {
     width: 300px; /* Adjust as needed */
     height: auto;
     border-radius: 5px;
-    flex-shrink: 0; /* Prevents image from shrinking */
+    flex-shrink: 0; 
+    animation: bounce 10s infinite;
 }
 
 
@@ -98,6 +103,20 @@ to {
 }
 
 
+.Data-Science{
+    font-size: 40px;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    color: #674188;
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    animation: bounce 5s infinite;
+    text-shadow: 2px 2px 5px rgb(103, 65, 136, 0.8); 
+    
+}
+
+
 .header {
   box-shadow: 0 0 20px #7a80ae; 
   display: flex;
@@ -105,11 +124,11 @@ to {
   justify-content: flex-start;
   gap: 10px; 
   padding-right: 20px;
-
+    
 }
 .header .fa-list-alt{
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
-  color: #F7EFE5;
+  color: #C8A1E0;
   font-size: 30px;
   animation: bounce 5s infinite;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -118,38 +137,84 @@ to {
  
 }
 .fa-list-alt:hover {
-    color: #C8A1E0; 
+    color: #2A004E; 
     
 }
 .header .fa-envelope{
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8h); 
-  color: #F7EFE5;
+  color: #C8A1E0;
   font-size: 25px;
   animation: bounce 5s infinite;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 .fa-envelope:hover {
-    color: #C8A1E0; 
+    color: #2A004E; 
 
 }
-
+/* beginning, welcoming text*/
 p {
   font-family: "VT323", monospace;
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
     color: #674188;
-    border: 10px solid #E2BFD9; /* Adds a thin black outline */
-    padding: 10px; /* Adds some space inside the border */
-    display: inline-block; /* Keeps the border tight around the text */
+    border: 10px solid #E2BFD9; 
+    padding: 10px; 
+    display: inline-block; 
+    animation: bounce 15s infinite;
 
 }
 .header a {
-  text-decoration: none; /* Removes underline */
-  color: inherit ; /* Ensures it takes the color of the parent */
+  text-decoration: none; 
+  color: inherit ; 
 }
 
 .header a:hover {
-  color: #C8A1E0 ; /* Hover color */
+  color: #C8A1E0 ; 
 }
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    /* makes the options hidden until clicked*/
+    display: none;
+    position: absolute;
+    top: 40px; 
+    left: 0;
+    background-color: #F7EFE5;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    color: #2A004E;
+    text-decoration: none;
+    font-size: 16px;
+}
+.dropdown-menu a:hover {
+    background-color: #F7EFE5;
+}
+.datasciencetext{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #000000;
+    border: none;
+}
+
+
+
+
 
