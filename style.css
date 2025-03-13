@@ -3,17 +3,20 @@ html {
 }
 
 body {
-  background-color: #F7EFE5;
-   padding-top: 80px
+    background-color: #F7EFE5;
+    padding-top: 80px
 }
- .header {
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 60px;
-    background-image: url('purplesky.png'); /* Replace with your image */
-    background-size: cover; /* Stretch to fill */
+    background-image: url('purplesky.png');
+    /* Replace with your image */
+    background-size: cover;
+    /* Stretch to fill */
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -27,70 +30,84 @@ body {
     z-index: 1000;
     animation: slideDown 1s ease-in-out;
 }
- @keyframes slideDown {
-from {
-    transform: translateY(-100%);
-    opacity: 0;
-}
-to {
-    transform: translateY(0);
-    opacity: 1;
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
+
+
+
 .content {
     display: flex;
     align-items: center;
-     justify-content: space-between; 
-    gap: 20px; 
-    max-width: 900px; /* Increase width */
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 900px;
+    /* Increase width */
     margin: 20px auto;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
 }
 
 .bordered-text {
-    flex: 1; /* Allows the text box to take up remaining space */
+    flex: 1;
+    /* Allows the text box to take up remaining space */
     font-family: "VT323", monospace;
     font-weight: 600;
     font-size: 20px;
     color: #674188;
     border: 5px solid #E2BFD9;
     padding: 10px;
-    display: block; 
-    max-width: 450px; 
+    display: block;
+    max-width: 450px;
 }
 
 .side-image {
-    width: 300px; /* Adjust as needed */
+    width: 300px;
+    /* Adjust as needed */
     height: auto;
     border-radius: 5px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     animation: bounce 10s infinite;
 }
 
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 15px; /* Ensures spacing between icons and text */
-  padding-right: 20px; /* Prevents cutoff */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    /* Ensures spacing between icons and text */
+    padding-right: 20px;
+    /* Prevents cutoff */
 }
 
 
 .header h1 {
-  margin-left: auto;
-  padding-right: 20px; 
-  font-family: "Jersey 15", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 40px;
-  color: #F7EFE5;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+    margin-left: auto;
+    padding-right: 20px;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #F7EFE5;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
+
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -103,75 +120,82 @@ to {
 }
 
 
-.Data-Science{
+.Data-Science {
     font-size: 40px;
     font-family: "Jersey 15", sans-serif;
     font-weight: 400;
-    color: #674188;
+    color: #3B1E54;
     white-space: nowrap;
     overflow: hidden;
     width: fit-content;
     animation: bounce 5s infinite;
-    text-shadow: 2px 2px 5px rgb(103, 65, 136, 0.8); 
-    
+    text-shadow: 2px 2px 5px rgb(103, 65, 136, 0.8);
+
 }
 
 
 .header {
-  box-shadow: 0 0 20px #7a80ae; 
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px; 
-  padding-right: 20px;
-    
-}
-.header .fa-list-alt{
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
-  color: #C8A1E0;
-  font-size: 30px;
-  animation: bounce 5s infinite;
-  transition: transform 0.3s ease, color 0.3s ease;
- 
+    box-shadow: 0 0 20px #7a80ae;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-right: 20px;
 
- 
 }
+
+.header .fa-list-alt {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    color: #C8A1E0;
+    font-size: 30px;
+    animation: bounce 5s infinite;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+
+
+}
+
 .fa-list-alt:hover {
-    color: #2A004E; 
-    
-}
-.header .fa-envelope{
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8h); 
-  color: #C8A1E0;
-  font-size: 25px;
-  animation: bounce 5s infinite;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-.fa-envelope:hover {
-    color: #2A004E; 
+    color: #2A004E;
 
 }
+
+.header .fa-envelope {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8h);
+    color: #C8A1E0;
+    font-size: 25px;
+    animation: bounce 5s infinite;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fa-envelope:hover {
+    color: #2A004E;
+
+}
+
 /* beginning, welcoming text*/
 p {
-  font-family: "VT323", monospace;
+    font-family: "VT323", monospace;
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
     color: #674188;
-    border: 10px solid #E2BFD9; 
-    padding: 10px; 
-    display: inline-block; 
+    border: 10px solid #E2BFD9;
+    padding: 10px;
+    display: inline-block;
     animation: bounce 15s infinite;
 
 }
+
 .header a {
-  text-decoration: none; 
-  color: inherit ; 
+    text-decoration: none;
+    color: inherit;
 }
 
 .header a:hover {
-  color: #C8A1E0 ; 
+    color: #C8A1E0;
 }
+
 .icon-container {
     position: relative;
     display: inline-block;
@@ -186,7 +210,7 @@ p {
     /* makes the options hidden until clicked*/
     display: none;
     position: absolute;
-    top: 40px; 
+    top: 40px;
     left: 0;
     background-color: #F7EFE5;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -203,10 +227,12 @@ p {
     text-decoration: none;
     font-size: 16px;
 }
+
 .dropdown-menu a:hover {
     background-color: #F7EFE5;
 }
-.datasciencetext{
+
+.datasciencetext {
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
@@ -214,7 +240,19 @@ p {
     border: none;
 }
 
-
-
-
-
+.header2text {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color: #674188;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.header3text {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    color: #C8A1E0;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
