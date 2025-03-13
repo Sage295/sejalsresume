@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=VT323&family=Jersey+15&display=swap" rel="stylesheet">
-       
-    </head>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=VT323&family=Jersey+15&display=swap"
+        rel="stylesheet">
+
+</head>
+
 <body>
 
     <!-- Animated Taskbar -->
     <div class="header">
-        <i class="fa fa-list-alt"></i>
+        <div class="icons">
+            <i class="fa fa-list-alt" onclick="toggleMenu()"></i>
+            <div class="dropdown-menu" id="menu">
+                <a href="#data-science">Data Science Projects</a>
+                <a href="#statistics">Statisitcs Projects</a>
+                <a href="#programming">Programming Projects</a>
+                <a href="#">Sources</a>
+            </div>
+        </div>
+
         <a href="mailto:se731266@ucf.edu">
-        <i class="fa fa-envelope"></i>
+            <i class="fa fa-envelope"></i>
         </a>
-        
+
         <h1 class="bouncing-text">Hello.Sejal()</h1>
     </div>
+
+
 
     <!-- Text with Image -->
     <div class="content">
         <p class="bordered-text">
-            Hi! Welcome to my website! My name is Sejal Mogalgiddi and I am a current sophomore at the University of Central Florida.
-            I made this website to display all my projects (even those that are currently in progress).
-            Please note that I have no professional experience with HTML, CSS, and JS so this website might look a little rough as I keep working on it.
+            Hi! Welcome to my website! My name is Sejal Mogalgiddi, and I am a current sophomore at the University of
+            Central Florida.
+            I made this website to display all my projects (even those currently in progress).
+            Please note that I have no professional experience with HTML, CSS, and JS so this website might look a
+            little rough as I keep working on it.
             <br><br>
             Thank you for visiting my website!
         </p>
         <img src="me.jpg" alt="Description" class="side-image">
-    
+
+
+    </div>
+    <script src="script.js"></script>
+    <div>
+        <h1 id="data-science" class="Data-Science">Data Science Projects</h1>
+        <p class="datasciencetext"> I currently do not have any Data Science projects as my<br> schedule hasn't
+            permitted me to start any, however, I have<br> high hopes to have a few by the end of this year!</p>
+    </div>
+    <div>
+        <h1 id="statistics" class="Data-Science">Statisitics Projects</h1>
+        <pclass="datasciencetext"> UDHBUIBAUFBIEUKVHAEUKVKA<br>
+            EBVKDJFVKDFBVFKBDVFVIJDIFVNDILFVNUDHBUIBAUFBIEUKVHAEUKVKAEBVKDJFVKDFBVFKBDVFVI<br>JDIFVNDILFVNUDHBUIBAUFBIEUKVHAEUKVKAEBVKDJFVKDFBVFKBDVFVIJDIFVNDILFVNUDHBUIBAUFBIEUKVHAEUKV<br>KAEBVKDJFVKDFBVFKBDVFVIJDIFVNDILFVNUDHBUIBAUF<br>BIEUKVHAEUKVKAEBVKDJFVKDFBVFKBDVFVIJDIFVNDIL<br>FVNUDHBUIBAUFBIEUKVHAEUKVKAEBVKDJFVKDFBVFKBDV<br>FVIJDIFVNDILFVNUDHBUIBAUFBIEUKVHAEUKVKAEBVKD<br>JFVKDFBVFKBDVFVIJDIFVNDILFVNUDHBUIBAUFBIEUKVH<br>AEUKVKAEBVKDJFVKDFBVFKBDVFVIJDIFVNDILFVNUDHBU<br>IBAUFBIEUKVHAEUKVKAEBVKDJFVKDFBVFKBDVFVIJDIFV<br>NDILFVNUDHBUIBAUFBIEUKVHAEUKVKAEBVKDJFVKDFBVF<br>KBDVFVIJDIFVNDILFVNUDHBUIBAUFBIEUKVHAEUKVKAEB<br>VKDJFVKDFBVFKBDVFVIJDIFVNDILFVNUDHBUIBAUFBIEU<br>KVHAEUKVKAEBVKDJFVKDFBVFKBDVFVIJDIFVNDILFVNUD<br>HBUIBAUFBIEUKVHAEUKVKVNDILFVN
+        </p>
+    </div>
+    <div>
+        <h1 id="programming" class="Data-Science">Programming Projects</h1>
+        <p>UDHBUIBAUFBIEUKVHAEUKVKA<br>
+            EBVKDJFVKDFBVFKBDVFVIJDIFVNDILFVNUDHBUIBAUFBIEUKVHAEUKVKAEBVKDJFVKDFBVFKBDVFVI<br>JDIFVNDILFVNUDHBUIBAUFBIEUKVHAEUKVKAEBVKDJFVKDFBVFKBDVFVIJDIFVNDILFVNUDHBUIBAUFBIEUKVHAEUKV<br>KAEBVKDJFVKDFBVFKBDVFVIJDIFVNDILFVNUDHBUIBAUF<br>BIEUKVHAEUKVKAEBVKDJFVKDFBVFKBDVFVIJDIFVNDIL<br>FVNUDHBUIBAUFBIEUKVHAEUKVKAEBVKDJFVKDFBVFKBDV<br>FVIJDIFVNDILFVNUDHBUIBAUFBIEUKVHAEUKVKAEBVKD<br>JFVKDFBVFKBDVFVIJDIFVNDILFVNUDHBUIBAUFBIEUKVH<br>AEUKVKAEBVKDJFVKDFBVFKBDVFVIJDIFVNDILFVNUDHBU<br>IBAUFBIEUKVHAEUKVKAEBVKDJFVKDFBVFKBDVFVIJDIFV<br>NDILFVNUDHBUIBAUFBIEUKVHAEUKVKAEBVKDJFVKDFBVF<br>KBDVFVIJDIFVNDILFVNUDHBUIBAUFBIEUKVHAEUKVKAEB<br>VKDJFVKDFBVFKBDVFVIJDIFVNDILFVNUDHBUIBAUFBIEU<br>KVHAEUKVKAEBVKDJFVKDFBVFKBDVFVIJDIFVNDILFVNUD<br>HBUIBAUFBIEUKVHAEUKVKVNDILFVN
+        </p>
+
 
     </div>
 
 </body>
+
 </html>
