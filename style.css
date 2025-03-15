@@ -6,6 +6,12 @@ body {
     background-color: #F7EFE5;
     padding-top: 80px
 }
+.container {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
 
 .header {
     position: fixed;
@@ -14,9 +20,9 @@ body {
     width: 100%;
     height: 60px;
     background-image: url('purplesky.png');
-    /* Replace with your image */
+    
     background-size: cover;
-    /* Stretch to fill */
+    
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -72,6 +78,14 @@ body {
 .side-image {
     width: 300px;
     /* Adjust as needed */
+    height: auto;
+    border-radius: 5px;
+    flex-shrink: 0;
+    animation: bounce 10s infinite;
+}
+.side-image1 {
+    width: 500px;
+    
     height: auto;
     border-radius: 5px;
     flex-shrink: 0;
@@ -233,6 +247,7 @@ p {
 }
 
 .datasciencetext {
+    flex: 1;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
@@ -254,5 +269,34 @@ p {
     font-style: normal;
     font-size: 15px;
     color: #C8A1E0;
-    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+   
 }
+.header4text {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #C8A1E0;
+
+}
+a {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #8174A0;
+    border: none;
+
+}
+.sources {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #8174A0;
+    border: none;
+
+}
+a:hover {
+      color: #EFB6C8;
+  }
