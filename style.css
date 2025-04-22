@@ -66,8 +66,8 @@ body {
     flex: 1;
     /* Allows the text box to take up remaining space */
     font-family: "VT323", monospace;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 25px;
     color: #674188;
     border: 5px solid #E2BFD9;
     padding: 10px;
@@ -250,7 +250,7 @@ p {
     flex: 1;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 23px;
     color: #000000;
     border: none;
 }
@@ -267,7 +267,7 @@ p {
     font-family: "Pixelify Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 15px;
+    font-size: 18px;
     color: #C8A1E0;
    
 }
@@ -275,7 +275,7 @@ p {
     font-family: "Pixelify Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 22px;
     color: #C8A1E0;
 
 }
