@@ -2,144 +2,52 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=VT323&family=Jersey+15&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  </-- header font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
-</head>
+
+ 
+  </head>
 
 <body>
-
-    <!-- Animated Taskbar -->
-    <div class="header">
-        <div class="icons">
-            <i class="fa fa-list-alt" onclick="toggleMenu()"></i>
-            <div class="dropdown-menu" id="menu">
-                <a href="#data-science">Data Science Projects</a>
-                <a href="#statistics">Statisitcs Projects</a>
-                <a href="#programming">Programming Projects</a>
-                <a href="#sources">Sources</a>
-            </div>
-        </div>
-
-        <a href="mailto:se731266@ucf.edu">
-            <i class="fa fa-envelope"></i>
-        </a>
-
-        <h1 class="bouncing-text">Hello.Sejal()</h1>
-    </div>
-
-
-
-    <!-- Text with Image -->
-    <div class="content">
-        <p class="bordered-text">
-            Hi! Welcome to my website! My name is Sejal Mogalgiddi, and I am a current sophomore at the University of
-            Central Florida.
-            I made this website to display all my projects (even those that are currently in progress).
-            Please note that I have no professional experience with HTML, CSS, and JS, so this website might look a
-            little rough as I keep working on it.
-            <br><br>
-            Thank you for visiting my website!
-        </p>
-        <img src="me.jpg" alt="A Picture of me!" class="side-image">
-
-
-    </div>
-    <script src="script.js"></script>
-    <br><br><br><br><br><br>
-    </b>
-    <div>
-        <h1 id="data-science" class="Data-Science">Data Science Projects</h1>
-        <p class="datasciencetext"> I currently do not have any Data Science projects as my<br> schedule hasn't
-            permitted me to start any, however, I have<br> high hopes to have a few by the end of this year!</p>
-    </div>
-    <div>
-        <h1 id="statistics" class="Data-Science">Statisitics Projects</h1>
-        <h2 class="header2text">Canadian Fuel efficiency</h2>
-        <h3 class="header3text">Completed </h3>
-        <div class="container">
-            <div>
-                <h4 class="header4text">What is this project about?</h4>
-                <p class="datasciencetext"> In this project, and my teammate and I used R programming to analyze data<br>
-                    from the released information about fuel efficiency of various vehicles that<br>
-                    were released for 2025 models. We used city fuel efficiency to predict highway<br>
-                    fuel efficiency.
-                </p>
-            </div>
-            <img src="rcode1.png" alt="r code of analyzing data" class="side-image1">
-        </div>
-    
-        <p class="datasciencetext">The data set was retrieved from: <a href="https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64/resource/d589f2bc-9a85-4f65-be2f-20f17debfcb1" target="_blank">2025 Fuel Consumption Ratings</a> </p>
-         
-
-        <h4 class="header4text">What is my role in this project?</h4>
-        <p class="datasciencetext">My role in this project was significant as I coded all the data into RSTUDIO,<br> analyzed the given data, and drew conclusions from the analyzed data.<br> I was also responsible for all the transformations, drawing the final conclusion.<br>Unfortunatley my partner contributed very minimally to this project as they<br> were responsible for writing up parts d, e, and f in the document. </pr>
-        <br>
-        <br>
-        <a href="https://docs.google.com/document/d/1tOjh09le34XeeiUj5PvRLfiQBVkK5Qu_X32ZPURg-YA/edit?usp=sharing" target="_blank">Google document of the full project</a>
-
-        <h2 class="header2text">Impact of Economic Development on the Labor Market</h2>
-        <h3 class="header3text"> In progress</h3>
-        <div class="container">
-            <div>
-                <h4 class="header4text">What is this project about?</h4>
-                <p class="datasciencetext"> In this project, my teammates and I aimed to analyze a country's unemployment rate                     (%)<br> based on economic factors such as gross domestic product (GDP), inflation, and economic growth.<br> The                           unemployment rate measures the percentage of a country's population that is actively<br> seeking employment but not                    being employed.
-                </p>
-            </div>
-            <!--<img src="rcode1.png" alt="r code of analyzing data" class="side-image1">-->
-        </div>
-
-        <p class="datasciencetext">The data set was retrieved from: <a href="https://www.kaggle.com/datasets/adilshamim8/economic-indicators-and-inflation" target="_blank">Economic Indicators & Inflation</a> </p>
-
-
-        <h4 class="header4text">What is my role in this project?</h4>
-        <p class="datasciencetext">My roles consisted of the following: <br> 1. Exploratory data analysis: Finding any anomalies, unsual trends or anything that could give us false reports of our project.<br>2. Model diagnostics: Building models, analyzing them. Conducting tests to test the five assumptions<br>(independence, linearity, normality, homoscedasticity (constant variance), and the absence of multicollinearity.) <br> 3. Testing interaction terms and their effects on the preliminary model<br>4. Coding all of model diagnostics and using RSTUDIO (r programming) to find any outliers and test if they are plausible.</pr>
-        <br>
-        <br>
-        <a href="https://docs.google.com/document/d/1D4ehzUYaB-9FEucyfJxipPBqKRepGQQ5u-6eHFi6Yp4/edit?usp=sharing" target="_blank">Google document of the full project</a>
-         <p class="datasciencetext">* Please note! This project is still unfinished, it is set to finish on April 28 2025!</pr>
-        </p>
-        <p class="datasciencetext"> 
-           
-        </p>
-    </div>
-    <div>
-        <h1 id="programming" class="Data-Science">Programming Projects</h1>
-        <h2 class="header2text">Twisted Desires</h2>
-        <h3 class="header3text">In progress </h3>
-        <h4 class="header4text">What is Twisted desires?</h4>
-        <p class="datasciencetext"> Twisted Desires is an eerie 2-D pixel game set in a high school.<br> The player is a high school boy who is being chased by his crazy<br> obssessive stalker. The player must use their wits and skills <br>to survive and escape the stalker throughout the school as they finds<br> keys and clues to unlock all the rooms in order to <br> find the master key which unlocks the exit.
-        </p>
-        <p class="datasciencetext">&nbsp;&nbsp;&nbsp;</p>
-         <img src="TwistedDesiresLogo.png" alt="TwistedDesiresLogo" class="side-image">
-
-        <h4 class="header4text">What is my role in this project?</h4>
-        <p class="datasciencetext"> Since I work with 3 other people in this project, the roles and <br>responsibilities are dividing equally amongst myself and my 3 teammates, so far I have been <br>responsible for creating the classrooms, connecting the scenes, making and connecting the music to
-            <br>the scenes and some other roles that have not been decided yet.<br> We are using Unity to make this game.
-        </p>
-
-
-    </div>
-
-     <h1 id="sources" class="Data-Science">Sources</h1>
-    <p class="sources">Artwork made by Me</p>
+ <div class="website_header" id="portfolio"> Sejal's Portfolio </div> 
+  <div class="website_header hidden" id="helloSejal"> Hello.Sejal() </div>
+  <h1>
+    <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome!", "My name is Sejal", "I Love to Code!", "I Love to Learn.", "And I Love Cats!" ]'>
+      <span class="wrap"></span>
+    </a>
     <br>
-    <a href="https://fonts.google.com/" target="_blank">Website for where I got all the fonts I used</a>
     <br>
-    <a href="https://fontawesome.com/v4/icons/" target="_blank">Website for where I got all the icons I used</a>
-    <br>
-    
+    <img src="picture_of_me.jpg" alt="A Picture of me!" class="side-image">
+    <a href="mailto: se731266@ucf.edu" class="corner-icon">
+      <img src="envelope.jpg" alt="Home Icon" class="icon">
+    </a>
+
+  </h1>
+<!-- ABOUT ME SECTION-->
+  <!-- ABOUT ME SECTION-->
+  <h2 class="Headers"> A little about me! </h2>
+  <div class="text">
+    <p>
+      I am a student at the University of Central Florida. I am majoring in Computer Science and minoring in Data Science. I am a rising Junior passionate about coding, learning, and creative arts. I am a STEM tutor at STEAMUP Academy, mentoring in robotics and coding.
+    </p>
+    <p>
+      In my free time, I enjoy art like drawing, animating, and painting. I also like music—I'm a band nerd for the past 10 years who loves playing her flute. I find it fun to mix my creativity with coding. The following images seen on this portfolio are made by me (and maybe a teeny bit of help from my little sister).
+    </p>
+    <p>
+      Thank you so much for visiting my portfolio. I’m excited to grow as a developer and creator. Feel free to connect or reach out!
+    </p>
+  </div>
+
+   <script src="script.js"></script>
 </body>
+
 
 </html>
