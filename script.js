@@ -79,28 +79,74 @@
     }
   };
 //MUSIC!!
-const bgMusic = document.getElementById('bg-music');
-const muteButton = document.getElementById('mute-button');
-const muteIcon = document.getElementById('mute-icon');
-
-// Play music on first interaction (even though muted)
-document.addEventListener('click', function initMusic() {
-  bgMusic.play().catch(err => console.log("Autoplay error:", err));
-  document.removeEventListener('click', initMusic); // Only trigger once
-});
-
-// Toggle mute/unmute on button click
-muteButton.addEventListener('click', function (e) {
-  e.stopPropagation(); // Prevent re-triggering initMusic
-
-  bgMusic.muted = !bgMusic.muted;
-
-  // Toggle icon
-  if (bgMusic.muted) {
-    muteIcon.classList.remove('fa-volume-off');
-    muteIcon.classList.add('fa-volume-high'); // muted = show "volume-high"
-  } else {
-    muteIcon.classList.remove('fa-volume-high');
-    muteIcon.classList.add('fa-volume-off'); // unmuted = show "volume-off"
-  }
+document.addEventListener('DOMContentLoaded', function() {
+    // Get audio element and mute button
+    const bgMusic = document.getElementById('bg-music');
+    const muteButton = document.getElementById('mute-button');
+    const muteIcon = document.getElementById('mute-icon');
+    
+    // Initialize audio settings
+    bgMusic.volume = 0.5; // Set default volume to 50%
+    bgMusic.muted = true; // Start muted by default
+    
+    // Update icon to reflect initial muted state
+    updateMuteIcon();
+    
+    // Try to play audio (muted) when page loads
+    bgMusic.play().catch(error => {
+        console.log("Autoplay prevented:", error);
+    });
+    
+    // Mute/unmute toggle functionality
+    muteButton.addEventListener('click', function() {
+        // Toggle mute state
+        bgMusic.muted = !bgMusic.muted;
+        
+        // Update icon
+        updateMuteIcon();
+        
+        // If unmuting and audio isn't playing, try to play
+        if (!bgMusic.muted && bgMusic.paused) {
+            bgMusic.play().catch(error => {
+                console.log("Playback failed:", error);
+                // If playback fails, revert to muted state
+                bgMusic.muted = true;
+                updateMuteIcon();
+            });
+        }
+    });
+    
+    // Function to update mute icon based on current state
+    function updateMuteIcon() {
+        if (bgMusic.muted) {
+            muteIcon.classList.remove('fa-volume-high');
+            muteIcon.classList.add('fa-volume-off');
+            muteIcon.style.color = "#9DC08B"; // Your preferred color
+        } else {
+            muteIcon.classList.remove('fa-volume-off');
+            muteIcon.classList.add('fa-volume-high');
+            muteIcon.style.color = "#9DC08B"; // Your preferred color
+        }
+    }
+    
+    // Error handling
+    bgMusic.addEventListener('error', function() {
+        console.error("Audio error:", bgMusic.error);
+        muteIcon.classList.remove('fa-volume-high', 'fa-volume-off');
+        muteIcon.classList.add('fa-triangle-exclamation');
+        muteIcon.style.color = "#ff0000"; // Red for error
+    });
+    
+    // Alternative: Start music on first user interaction with page
+    document.addEventListener('click', function initMusic() {
+        // Only run this once
+        document.removeEventListener('click', initMusic);
+        
+        // If music isn't playing yet, start it (still respecting mute state)
+        if (bgMusic.paused) {
+            bgMusic.play().catch(error => {
+                console.log("Playback failed:", error);
+            });
+        }
+    }, { once: true });
 });
