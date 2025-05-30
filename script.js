@@ -78,3 +78,28 @@
       });
     }
   };
+//MUSIC!!
+const bgMusic = document.getElementById('bg-music');
+const muteButton = document.getElementById('mute-button');
+const muteIcon = document.getElementById('mute-icon');
+
+// Start music on first click
+function initMusic() {
+  bgMusic.play().catch(err => console.log("Autoplay error:", err));
+  document.removeEventListener('click', initMusic);
+}
+document.addEventListener('click', initMusic);
+
+// Toggle mute and icon class
+muteButton.addEventListener('click', () => {
+  bgMusic.muted = !bgMusic.muted;
+
+  // Swap icons
+  if (bgMusic.muted) {
+    muteIcon.classList.remove('fa-volume-high');
+    muteIcon.classList.add('fa-volume-off');
+  } else {
+    muteIcon.classList.remove('fa-volume-off');
+    muteIcon.classList.add('fa-volume-high');
+  }
+});
